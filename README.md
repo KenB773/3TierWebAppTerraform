@@ -11,7 +11,7 @@ The application includes:
 
 ---
 
-## 📦 Architecture Overview
+## Architecture Overview
 
 ```
                            ┌────────────────────────┐
@@ -50,7 +50,7 @@ The application includes:
 
 ---
 
-## 🚀 Endpoints
+## Endpoints
 
 - `/` → Health message from Node.js app
 - `/health` → ALB health check target
@@ -58,7 +58,7 @@ The application includes:
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - AWS Fargate (ECS)
 - AWS Application Load Balancer
@@ -74,8 +74,8 @@ The application includes:
 
 - Always bind to `0.0.0.0` in Docker containers for ALB health checks
 - PostgreSQL on RDS requires SSL; use `ssl: { rejectUnauthorized: false }` and/or `PGSSLMODE=require`
-- ECS tasks must have security groups that allow ALB traffic on app port (e.g., 3000)
-- ALB health checks are critical for debugging container readiness
+- If a connection issue seems complicated, it's probably just a simple security group misconfiguration 🥹.
+- ALB health checks are critical for debugging container readiness!
 
 ---
 
