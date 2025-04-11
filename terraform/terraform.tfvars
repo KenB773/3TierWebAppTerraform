@@ -1,0 +1,10 @@
+aws_region       = "us-east-1"
+project          = "3tierproj-terraform"
+vpc_name         = "3tierproj-vpc"
+vpc_cidr         = "10.0.0.0/16"
+azs              = ["us-east-1a", "us-east-1b"]
+public_subnets   = ["10.0.1.0/24", "10.0.2.0/24"]
+private_subnets  = ["10.0.101.0/24", "10.0.102.0/24"]
+db_username      = "postgres"
+db_password      = "SuperStrongPassy321!"
+container_image  = "471303021226.dkr.ecr.us-east-1.amazonaws.com/node-fargate-api:v8"
