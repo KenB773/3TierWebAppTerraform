@@ -1,6 +1,6 @@
 # 3-Tier Node.js Application on AWS Fargate
 
-This project demonstrates the deployment of a full 3-tier web application using AWS Fargate, Application Load Balancer, PostgreSQL on Amazon RDS, and Terraform for infrastructure provisioning.
+This project demonstrates the deployment of a full 3-tier web application using AWS Fargate, Application Load Balancer, PostgreSQL on Amazon RDS and Terraform for infrastructure provisioning.
 
 The application includes:
 - A Node.js Express backend with RESTful endpoints
@@ -70,7 +70,7 @@ The application includes:
 
 ---
 
-## ✅ Lessons Learned
+## Lessons Learned
 
 - Always bind to `0.0.0.0` in Docker containers for ALB health checks
 - PostgreSQL on RDS requires SSL; use `ssl: { rejectUnauthorized: false }` and/or `PGSSLMODE=require`
@@ -79,7 +79,7 @@ The application includes:
 
 ---
 
-## 📌 Author
+## Author
 
 Deployed and documented by [Ken Brigham](https://github.com/KenB773)
 
